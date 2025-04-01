@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A comprehensive 7th CPC salary calculator tool for government employees. Accurately calculate your net salary based on HRA, DA, NPS, and income tax.">
+  <meta name="keywords" content="7th CPC calculator, salary calculator, Central Pay Commission, HRA, DA, NPS, income tax, government salary">
+  <meta name="author" content="Your Name">
+
+  <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:title" content="7th CPC Salary Calculator: Accurate Salary Calculations">
+  <meta property="og:description" content="Calculate your net salary under the 7th Central Pay Commission with ease. Includes HRA, DA, NPS, and income tax calculations.">
+  <meta property="og:image" content="https://yourwebsite.com/images/og-image.jpg">
+  <meta property="og:url" content="https://yourwebsite.com/7th-cpc-calculator">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="7th CPC Salary Calculator: Accurate Salary Calculations">
+  <meta name="twitter:description" content="Calculate your net salary under the 7th Central Pay Commission with ease. Includes HRA, DA, NPS, and income tax calculations.">
+  <meta name="twitter:image" content="https://yourwebsite.com/images/twitter-image.jpg">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://yourwebsite.com/7th-cpc-calculator">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://yourwebsite.com/images/favicon.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+
+  <!-- Structured Data (JSON-LD) for Rich Results -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "7th CPC Salary Calculator",
+      "description": "A comprehensive tool to calculate net salary under the 7th Central Pay Commission.",
+      "url": "https://yourwebsite.com/7th-cpc-calculator",
+      "softwareVersion": "1.0",
+      "operatingSystem": "All",
+      "applicationCategory": "SalaryCalculator",
+      "inLanguage": "en-US"
+    }
+  </script>
+
+  <title>7th CPC Salary Calculator: Accurate Salary Calculations</title>
+
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9fafb;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #0073e6, #00b4d8);
+      color: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 36px;
+      margin: 0;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .ad-slot {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    #calculator {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    #calculator label {
+      display: block;
+      margin-top: 15px;
+      font-size: 16px;
+      color: #555;
+    }
+
+    #calculator input, #calculator select {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+    }
+
+    #calculator input:focus, #calculator select:focus {
+      border-color: #0073e6;
+      outline: none;
+    }
+
+    #calculator button {
+      margin-top: 25px;
+      padding: 12px;
+      width: 100%;
+      background: linear-gradient(135deg, #0073e6, #00b4d8);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    #calculator button:hover {
+      transform: scale(1.05);
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 18px;
+      text-align: left;
+      color: #333;
+    }
+
+    #blog {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    #blog h2 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      margin-top: 30px;
+      color: #0073e6;
+    }
+
+    #blog p {
+      font-size: 16px;
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(135deg, #0073e6, #00b4d8);
+      color: white;
+      font-size: 14px;
+      box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Smooth Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 30px;
+      }
+
+      #calculator {
+        padding: 20px;
+      }
+
+      #blog {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>7th CPC Salary Calculator</h1>
+    <p>Calculate your net salary under the 7th Central Pay Commission with ease.</p>
+  </header>
+
+  <!-- Advertisement Slot (Above the Calculator) -->
+  <div class="ad-slot">
+    <!-- Insert Google AdSense Code Here -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_ADSENSE_ID" crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+         data-ad-slot="YOUR_AD_UNIT_ID"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Calculator Section -->
+  <section id="calculator">
+    <h2>Calculate Your Salary</h2>
+    <form id="salary-form">
+      <label for="basic-pay">Basic Pay:</label>
+      <input type="number" id="basic-pay" placeholder="Enter Basic Pay" required>
+
+      <label for="city">Select Your City:</label>
+      <select id="city" required>
+        <option value="">-- Select City --</option>
+        <option value="x">X City (24% HRA)</option>
+        <option value="y">Y City (16% HRA)</option>
+        <option value="z">Z City (8% HRA)</option>
+      </select>
+
+      <label for="da">DA (%):</label>
+      <input type="number" id="da" placeholder="Enter DA Percentage" required>
+
+      <label for="ta">Transport Allowance (TA):</label>
+      <input type="number" id="ta" placeholder="Enter TA Amount" required>
+
+      <label for="special-allowance">Special Allowance:</label>
+      <input type="number" id="special-allowance" placeholder="Enter Special Allowance" required>
+
+      <label for="nps">NPS (%):</label>
+      <input type="number" id="nps" placeholder="Enter NPS Deduction Percentage" required>
+
+      <label for="income-tax">Income Tax (%):</label>
+      <input type="number" id="income-tax" placeholder="Enter Income Tax Percentage" required>
+
+      <button type="submit">Calculate</button>
+    </form>
+    <div id="result"></div>
+  </section>
+
+  <!-- Advertisement Slot (Below the Calculator) -->
+  <div class="ad-slot">
+    <!-- Insert Google AdSense Code Here -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_ADSENSE_ID" crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+         data-ad-slot="YOUR_AD_UNIT_ID"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Blog Section -->
+  <section id="blog">
+    <h2>About the 7th Central Pay Commission (CPC)</h2>
+    <p>The 7th Central Pay Commission (CPC), established in 2016, was a landmark initiative by the Indian government to revise the salary structure of central government employees. It aimed to address pay disparities, improve transparency, and ensure fair compensation for employees across various sectors. The commission introduced several changes to the salary structure, including revised basic pay scales, allowances, and deductions.</p>
+
+    <h2>Key Components of the 7th CPC Salary Structure</h2>
+    <p>The 7th CPC introduced several components that determine an employee's net salary. These include:</p>
+    <ul>
+      <li><strong>Basic Pay:</strong> The foundational salary before any allowances or deductions. It forms the base for calculating other components like HRA, DA, and NPS.</li>
+      <li><strong>HRA (House Rent Allowance):</strong> Varies by city (X City: 24%, Y City: 16%, Z City: 8%). This allowance helps employees cover housing expenses based on their location.</li>
+      <li><strong>DA (Dearness Allowance):</strong> Adjusted periodically to offset inflation. It is calculated as a percentage of the basic pay.</li>
+      <li><strong>TA (Transport Allowance):</strong> Provided to cover commuting expenses. The amount varies based on the employee's grade and role.</li>
+      <li><strong>Special Allowance:</strong> An additional allowance provided for specific roles or responsibilities.</li>
+      <li><strong>NPS (National Pension System):</strong> A mandatory retirement savings deduction, typically 10% of the basic pay.</li>
+      <li><strong>Income Tax:</strong> Deducted based on income tax slabs applicable to the employee's total income.</li>
+    </ul>
+
+    <h2>How the 7th CPC Calculator Works</h2>
+    <p>Our calculator simplifies the process of determining your net salary under the 7th CPC. Here's how it works:</p>
+    <ol>
+      <li>Input your basic pay.</li>
+      <li>Select your city to determine the applicable HRA percentage.</li>
+      <li>Enter the DA percentage, transport allowance (TA), and special allowance.</li>
+      <li>Specify the NPS deduction percentage and income tax percentage.</li>
+      <li>The calculator computes your gross salary, applies deductions, and displays your net salary.</li>
+    </ol>
+
+    <h2>Why Use the 7th CPC Salary Calculator?</h2>
+    <p>This tool is invaluable for government employees who want to:</p>
+    <ul>
+      <li>Understand their salary structure in detail.</li>
+      <li>Plan their finances effectively.</li>
+      <li>Ensure transparency in salary calculations.</li>
+      <li>Compare their salary with peers in different cities or roles.</li>
+    </ul>
+
+    <h2>Frequently Asked Questions (FAQs)</h2>
+    <p>Here are some common questions about the 7th CPC salary structure:</p>
+    <h3>What is the 7th CPC?</h3>
+    <p>The 7th CPC is a commission formed by the Indian government to recommend changes to the salary structure of central government employees. It replaced the previous pay structure with a revised one effective from January 1, 2016.</p>
+
+    <h3>How is HRA calculated?</h3>
+    <p>HRA is calculated as a percentage of the basic pay, depending on the city of residence:
+      <ul>
+        <li>X City: 24%</li>
+        <li>Y City: 16%</li>
+        <li>Z City: 8%</li>
+      </ul>
+    </p>
+
+    <h3>What is DA?</h3>
+    <p>DA is an allowance provided to offset the impact of inflation. It is calculated as a percentage of the basic pay and is reviewed periodically by the government.</p>
+
+    <h3>What is NPS?</h3>
+    <p>NPS (National Pension System) is a mandatory retirement savings scheme where 10% of the employee's basic pay is deducted and contributed to their pension account.</p>
+
+    <h3>How is income tax calculated?</h3>
+    <p>Income tax is calculated based on the employee's total income after deductions. The tax slabs vary depending on the income range and are subject to change annually in the Union Budget.</p>
+
+    <h2>Conclusion</h2>
+    <p>The 7th CPC has brought significant improvements to the salary structure of government employees. By using our calculator, you can gain a clear understanding of your net salary and make informed financial decisions. Whether you're planning for retirement, budgeting for expenses, or comparing salaries, this tool ensures accuracy and transparency.</p>
+  </section>
+
+  <!-- Advertisement Slot (Below the Blog) -->
+  <div class="ad-slot">
+    <!-- Insert Google AdSense Code Here -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_ADSENSE_ID" crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+         data-ad-slot="YOUR_AD_UNIT_ID"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 7th CPC Salary Calculator. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('salary-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      // Get input values
+      const basicPay = parseFloat(document.getElementById('basic-pay').value) || 0;
+      const city = document.getElementById('city').value;
+      const daPercentage = parseFloat(document.getElementById('da').value) || 0;
+      const ta = parseFloat(document.getElementById('ta').value) || 0;
+      const specialAllowance = parseFloat(document.getElementById('special-allowance').value) || 0;
+      const npsPercentage = parseFloat(document.getElementById('nps').value) || 0;
+      const incomeTaxPercentage = parseFloat(document.getElementById('income-tax').value) || 0;
+
+      // Determine HRA percentage based on city
+      let hraPercentage = 0;
+      if (city === 'x') {
+        hraPercentage = 24; // X City
+      } else if (city === 'y') {
+        hraPercentage = 16; // Y City
+      } else if (city === 'z') {
+        hraPercentage = 8; // Z City
+      }
+
+      // Calculate components
+      const hraAmount = (basicPay * hraPercentage) / 100;
+      const daAmount = (basicPay * daPercentage) / 100;
+      const grossSalary = basicPay + hraAmount + daAmount + ta + specialAllowance;
+      const npsDeduction = (basicPay * npsPercentage) / 100;
+      const taxableAmount = grossSalary - npsDeduction;
+      const incomeTax = (taxableAmount * incomeTaxPercentage) / 100;
+      const netSalary = taxableAmount - incomeTax;
+
+      // Display result
+      document.getElementById('result').innerHTML = `
+        <p><strong>Gross Salary:</strong> ₹${grossSalary.toFixed(2)}</p>
+        <p><strong>HRA Amount (City: ${city.toUpperCase()}):</strong> ₹${hraAmount.toFixed(2)}</p>
+        <p><strong>DA Amount:</strong> ₹${daAmount.toFixed(2)}</p>
+        <p><strong>Transport Allowance (TA):</strong> ₹${ta.toFixed(2)}</p>
+        <p><strong>Special Allowance:</strong> ₹${specialAllowance.toFixed(2)}</p>
+        <p><strong>NPS Deduction:</strong> ₹${npsDeduction.toFixed(2)}</p>
+        <p><strong>Income Tax:</strong> ₹${incomeTax.toFixed(2)}</p>
+        <p><strong>Net Salary:</strong> ₹${netSalary.toFixed(2)}</p>
+      `;
+    });
+  </script>
+</body>
+</html>
